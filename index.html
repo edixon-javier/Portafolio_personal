@@ -5,21 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            
+            color: rgb(4, 0, 255);
+            justify-content: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        ol:hover {
+            color: chartreuse;
+        }
+        .inicio{
+            color: crimson;
+        }
+        #semantica{
+            color: deepskyblue;
+        }
+        #selec::first-letter{
+            color: rgb(0, 128, 11);
+        }
+       
+    </style>
 </head>
+
 <body>
-    <h1>hola mundo</h1>
-    <div>
-        <ul>
+    <header>
+        <h1>Todo comienza en este punto</h1> 
+
+        <ul class="inicio">
             <li>creando pequeñas cosas</li>
             <li>creando nuevas cosas como queremos</li>
             <li>vamos tu puedes</li>
         </ul>
-        <p>Html semnatico</p>
-        <h5>utiliza propiedades adecuadas para cada una de 
-            los elementos creados
-        </h5>
 
-    </div>
-    <p>este es un parrafo</p>
+        <h2>html semantico</h2>
+        <ul id="semantica">
+            
+            <li>formas de utilizar las diferentes etiquetas para tener un hmtl accesible y posiscionamiento de seo</li>
+
+            <li>para tener el codigo mas claro y legible</li>
+
+            <li>tiene qeu tener sentido [header,doby, footer, nav, seccion]</li>
+        </ul>
+
+        <p>
+            <h2 id="selec">tipos selecctores</h2>
+            <h3>Básicos</h3>
+            <ul>
+                <li>De tipo: div {...}</li>
+                <li>De clase: .elemento {...}<li>
+                <li>De ID: #id-del-elemento</li>
+                <li> De atributo: a[href="..."]{...}</li>
+                <li>universal: *{...}</li>
+            </ul>
+            <h3>Combinadores</h3>
+            <ul>
+                <li>Descendientes: div p</li>
+                <li>Hijo directo: div > p</li>
+                <li>Elemento adyaente: div + p</li>
+                <li>General de hermanos: div ~ p</li>
+            </ul>
+        </p>
+        <p>
+            <h2>tipos de selectores</h2>
+            <h3>pseudoclases</h3>
+            <ul>
+               <ol>:active</ol>
+               <ol>:focus</ol>
+               <ol>:hiver</ol>
+               <ol>:nth-child(n)</ol>
+            </ul>
+            <h3>pseduoelementos</h3>
+            <ul>
+                <ol>::after</ol>
+                <ol>::before</ol>
+                <ol>::firts-letter</ol>
+                <ol>::placeholder</ol>
+             </ul>
+        </p>
+        <p>
+            <h2>Especificidad en CCs</h2>
+            <h3>orden de importancia en css</h3>
+            <ul>
+                <dl>!importan</dl>
+                <dl>estilos en linea</dl>
+                <dl>#id</dl>
+                <dl>clases, atributos y pseduoelementos</dl>
+                <dl>selectores universales</dl>
+            </ul>
+        </p>
+
+
+    </header>
+    
+    
+    <footer>
+
+            <img src="https://areajugones.sport.es/wp-content/uploads/2021/11/boku-no-hero-academia-the-movie-world-heroes-mission-fisico-1080x609.jpeg" alt="boku" >
+            <p>creo que este el el pie de apgina de mi html</p>
+    </footer>
+
 </body>
 </html>
