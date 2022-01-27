@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
-            
-            color: rgb(4, 0, 255);
-            justify-content: center;
+        h1, h2{
+            color: rgb(16, 214, 204);
             font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
         }
         
         ol:hover {
@@ -20,12 +19,68 @@
             color: crimson;
         }
         #semantica{
-            color: deepskyblue;
+            color: rgb(2, 2, 2);
         }
         #selec::first-letter{
             color: rgb(0, 128, 11);
         }
-       
+        ul {
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+            display: flex;
+            background: crimson;
+            justify-content: space-between;
+            height:30px;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background: cyan;
+        }
+        .container .item:nth-child(4){
+            background: rgb(8, 247, 40);
+        }
+        img {
+            display: block;
+            width: 50%;
+            height: 400px;
+            margin: auto;
+        }
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .car {
+            margin: 50px;
+            padding: 50px;
+            width: 1000px;
+            height: 800px;
+            background: rgb(5, 5, 5);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .kane{
+            position: relative;
+            width: 50%;
+            display: block;
+            margin: auto;
+            border-radius: 300px;
+        }
+        .fondo{
+            position: absolute;
+            width:75%;
+            height: 450px;
+            border-radius: 20px;
+
+        }
+        .car p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 70px;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -93,17 +148,72 @@
                 <dl>#id</dl>
                 <dl>clases, atributos y pseduoelementos</dl>
                 <dl>selectores universales</dl>
+                <a href="https://specificity.keegan.st/">Calculadora de especificidad</a>
             </ul>
         </p>
         <p>
-            Tenemos que probar que las cosas estan funcionando bien
+            <h2>tipos de display en HTML</h2>
+            <h3>tipos</h3>
+            <ul>
+                <li>block</li>
+                <li>inline</li>
+                <li>inline-block</li>
+                <li>flex</li>
+                <li>grid</li>
+            </ul>
+            <div class="container">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
         </p>
+        <p>
+            <h2>Modelos de cajas</h2>
+            <h3>Importan tema :) estrucutradel tema </h3>
+            <ul>
+                <li>content</li>
+                <li>padding</li>
+                <li>border</li>
+                <li>mrgin</li>
+            </ul>
+            <img src="https://static.platzi.com/media/user_upload/Captura%20de%20Pantalla%202021-10-31%20a%20la%28s%29%208.45.39-1bd1b777-6bba-4736-aee0-5a74f1e38b92.jpg" alt="modelo de caja">
+        </p>
+
+        <p>
+            <h2>Colapso de margenes</h2>
+            <h3>sucede cuando: hay dos bloqeus adyacentes.</h3>
+            <h3>No decede cuando: flexbox, grid y elementos que no sean de bloque</h3>
+        </p>
+        <p>
+            <h2>posicionamiento</h2>
+            <h3>nos ayudara a posicionar elementos</h3>
+            <ul>
+                <li>relative</li>
+                <li>absolute</li>
+                <li>fixed</li>
+                <li>sticky</li>
+                <li>static</li>
+                <li>initial</li>
+                <li>inherital</li>
+            </ul>
+            <h4>Todos estos nos van a dar un comportamiento diferente por cada una de las etiquetas. Las podemos agregar a todas las etiquetas y nos van a dar el mismo comportamiento pero los vamos a utilizar para diferentes cosas.</h4>
+        </p>
+        <h2>vamos a crear el ultimo proyecto del curso</h2>
+        <section>
+            <div class="car">
+                <img src="https://www.wallpaperkiss.com/wimg/b/116-1165816_big.jpg" class="fondo" alt="fondos">
+                <img src="https://i.ebayimg.com/images/g/aIMAAOSw8UZZ5kRh/s-l400.jpg" class="kane" alt="kaneki">
+                <p>Edixon javier pabon lizcano</p>
+                
+            </div>
+        </section>
+        
 
     </header>
     
     
     <footer>
-
             <img src="https://areajugones.sport.es/wp-content/uploads/2021/11/boku-no-hero-academia-the-movie-world-heroes-mission-fisico-1080x609.jpeg" alt="boku" >
             <p>creo que este el el pie de apgina de mi html</p>
     </footer>
